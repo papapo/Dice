@@ -1,0 +1,11 @@
+<html>
+	<body>
+		<p>サイコロを振った回数は<%= @report %>回です</p>
+		<p>統計</p>
+		<ul>
+			<% @statistics.each do |value, count| -%>
+				<li><%= value%>:<%= count %>回</li>
+			<% end-%>
+		</ul>
+	</body>
+</html>

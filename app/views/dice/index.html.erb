@@ -1,12 +1,11 @@
 <html>
-	<head>
-		<title>hello, dice</title>
-	</head>
-	<body>
-		<h1>サイコロを振ってください</h1>
-		<p>
-		<%=  link_to("サイコロを振る", :action => "shake")%>
-		</p>
+		<body>
+		<h2>結果一覧(最新５件)</h2>
+		<ul>
+			<% @rolls.each do |roll| -%>
+			<li><%= roll.value %></li>
+		<% end -%>
+		</ul>
 	</body>
 </html>
 

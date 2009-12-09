@@ -1,0 +1,10 @@
+<html>
+	<body>
+		<h2>結果一覧</h2>
+		<ul>
+			<% @report.each do |report| -%>
+				<li><%= report.value %></li>
+			<% end -%>
+		</ul>
+	</body>
+</html>
